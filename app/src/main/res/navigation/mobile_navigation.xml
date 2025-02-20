@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.endocalendar.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.endocalendar.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.endocalendar.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_datos"
+        android:name="com.example.endocalendar.ui.datos.DatosFragment"
+        android:label="@string/menu_datos"
+        tools:layout="@layout/fragment_datos" />
+
+    <fragment
+        android:id="@+id/nav_doctores"
+        android:name="com.example.endocalendar.ui.doctor.DoctorFragment"
+        android:label="@string/menu_doctores"
+        tools:layout="@layout/fragment_doctor" />
+    <argument
+        android:name="nombre"
+        app:argType="string"
+        android:defaultValue="Desconocido"/>
+    <argument
+        android:name="edad"
+        app:argType="integer"
+        android:defaultValue="0"/>
+
+    <fragment
+        android:id="@+id/nav_verdoctor"
+        android:name="com.example.endocalendar.ui.verdoctor.VerdoctorFragment"
+        android:label="@string/menu_doctores"
+        tools:layout="@layout/fragment_verdoctor" />
+</navigation>

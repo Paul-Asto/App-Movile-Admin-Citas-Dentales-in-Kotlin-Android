@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Cuadrante 1 -->
+    <FrameLayout
+        android:id="@+id/cuadrante1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Cuadrante 2 -->
+    <FrameLayout
+        android:id="@+id/cuadrante2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cuadrante1"/>
+
+    <!-- Cuadrante 3 -->
+    <FrameLayout
+        android:id="@+id/cuadrante3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintTop_toBottomOf="@id/cuadrante1"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Cuadrante 4 -->
+    <FrameLayout
+        android:id="@+id/cuadrante4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@android:color/holo_red_light"
+        app:layout_constraintTop_toBottomOf="@id/cuadrante2"
+        app:layout_constraintStart_toEndOf="@id/cuadrante3"/>
+    <!-- Botón para cerrar -->
+    <Button
+        android:id="@+id/btnCerrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cuadrante3"
+        android:layout_marginTop="16dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

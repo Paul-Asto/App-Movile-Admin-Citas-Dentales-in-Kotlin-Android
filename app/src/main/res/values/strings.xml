@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Endo Calendar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Prad</string>
+    <string name="nav_header_subtitle">josehmraz@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="menu_home">Citas</string>
+    <string name="menu_gallery">Historial</string>
+    <string name="menu_slideshow">Administracion</string>
+    <string name="menu_datos">Agregar Paciente</string>
+    <string name="menu_doctores">Doctores</string>
+</resources>
